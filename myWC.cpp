@@ -3,7 +3,7 @@
 #include <vector>
 #include <cctype>
 #include <sstream>
-#include <algorithm> // Include necessary library for sorting
+#include <algorithm>
 
 namespace MSKMIC017 {
     void countCharsWordsLinesAndPrint() {
@@ -46,19 +46,19 @@ namespace MSKMIC017 {
             }
         }
 
-        // Sort the charFreq vector alphabetically based on character
+        // Sort alphabetically
         std::sort(charFreq.begin(), charFreq.end(), [](const CharInfo& a, const CharInfo& b) {
             return a.character < b.character;
         });
 
-        // Print the counts of lines, words, and characters
+        // prints out the number of lines, words and characters
         std::cout << lineCount << " " << wordCount << " " << charCount << " [";
 
-        // Print the character frequency table
+        // Print the character frequency table to the console
         for (const CharInfo& info : charFreq) {
             std::cout << info.character << ":" << info.count << " ";
         }
 
-        std::cout << "]" << std::endl; // End of line
+        std::cout << "]" << std::endl; 
     }
 }
