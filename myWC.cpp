@@ -46,7 +46,7 @@ namespace MSKMIC017 {
             }
         }
 
-        // Sort alphabetically
+        // Sort the results alphabetically
         std::sort(charFreq.begin(), charFreq.end(), [](const CharInfo& a, const CharInfo& b) {
             return a.character < b.character;
         });

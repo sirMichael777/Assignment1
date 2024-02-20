@@ -9,7 +9,7 @@ namespace MSKMIC017 {
         char character;
         long count;
     };
-
+    
     void countCharsWordsLinesAndPrint();
 }
 
